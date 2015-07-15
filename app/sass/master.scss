@@ -1,0 +1,39 @@
+$color-primary: #3a434d;
+$color-secondary: #ebeef1;
+$color-light: #ffffff;
+$color-dark: #333333;
+
+body {
+  // struct
+  height: 600px;
+  width: 800px;
+  padding: 0;
+  margin: 30px auto;
+  // style
+  background: $color-secondary;
+  font-family: sans-serif;
+}
+
+nav {
+  // struct
+  width: 100%;
+  height: 80px;
+  // style
+  background: $color-primary;
+
+  button {
+    height: 100%;
+    background: red;
+  }
+}
+
+#generated-string {
+  // struct
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  box-sizing: border-box;;
+  text-align: left;
+  // style
+  background: $color-light;
+}
