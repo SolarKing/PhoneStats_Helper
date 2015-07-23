@@ -1,80 +1,10 @@
 <!DOCTYPE html>
-<html ng-app="phoneStats">
+<html>
   <head>
     <meta charset="utf-8">
-    <title>CAS IT Services | PhoneStats</title>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
+    <title>PhoneStats | CAS IT Services</title>
   </head>
-  <body ng-controller="StringController as strings">
-
-    <header>
-
-    </header>
-
-    <nav>
-      <form class="">
-        <button ng-class="{active: strings.formType === 'general'}" type="button" name="select-general" ng-click="strings.setFormType('general')">General</button>
-        <button ng-class="{active: strings.formType === 'software'}" type="button" name="select-software" ng-click="strings.setFormType('software')">Software</button>
-        <button ng-class="{active: strings.formType === 'email'}" type="button" name="select-email" ng-click="strings.setFormType('email')">Email</button>
-        <button ng-class="{active: strings.formType === 'transfer'}" type="button" name="select-transfer" ng-click="strings.setFormType('transfer')">Transfer</button>
-        <button ng-class="{active: strings.formType === 'service'}" type="button" name="select-service" ng-click="strings.setFormType('service')">Service</button>
-        <button ng-class="{active: strings.formType === 'print'}" type="button" name="select-print" ng-click="strings.setFormType('print')">Print</button>
-
-        <button type="button" name="reset" ng-click="strings.resetForm()">Reset</button>
-      </form>
-    </nav>
-
-    <main class="view-pane">
-      <section id="generated-string">
-        <span ng-hide="strings.segment_1.isHidden">{{strings.segment_1.info}}</span>
-        <span ng-hide="strings.segment_1.info == '' || strings.segment_1.isHidden">;</span>
-        <span ng-hide="strings.segment_2.isHidden">{{strings.segment_2.info}}</span>
-        <span ng-hide="strings.segment_2.info == '' || strings.segment_2.isHidden">;</span>
-        <span ng-hide="strings.segment_3.isHidden">{{strings.segment_3.info}}</span>
-        <span ng-hide="strings.segment_3.info == '' || strings.segment_3.isHidden">;</span>
-        <span>{{strings.summary}}</span>
-      </section>
-      <section id="">
-
-        <form>
-          <fieldset class="segment" ng-hide="strings.segment_1.isHidden">
-            <legend>{{strings.segment_1.label}}</legend>
-            <input ng-model="strings.segment_1.info" type="text" name="segment-1" value="" placeholder="Information goes here">
-            </input>
-          </fieldset>
-
-          <fieldset class="segment" ng-hide="strings.segment_2.isHidden">
-            <legend>{{strings.segment_2.label}}</legend>
-            <input ng-model="strings.segment_2.info" type="text" name="segment-2" value="" placeholder="Information goes here">
-            </input>
-          </fieldset>
-
-          <fieldset class="segment" ng-hide="strings.segment_3.isHidden">
-            <legend>{{strings.segment_3.label}}</legend>
-            <input ng-model="strings.segment_3.info" type="text" name="segment-3" value="" placeholder="Information goes here">
-            </input>
-          </fieldset>
-
-          <fieldset>
-            <legend>Summary</legend>
-            <textarea ng-model="strings.summary" name="summary" rows="8" cols="40"></textarea>
-          </fieldset>
-
-          <button type="button" name="copy-to-clipboard" id="copyToClipboard" ng-click="strings.copyStringToClipboard()">Copy to Clipboard</button>
-
-        </form>
-
-      </section>
-    </main>
-
-    <footer>
-      The form type is "{{strings.formType}}"
-    </footer>
-
-    <!-- Dependencies -->
-    <script src="./js/vendors.js"></script>
-    <script src="./js/app.js"></script>
+  <body>
 
   </body>
 </html>
