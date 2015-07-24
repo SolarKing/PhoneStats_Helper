@@ -23,7 +23,7 @@ app.on('ready', function() {
 
   mainWindow.loadUrl('file://' + __dirname + '/app/index.html');
 
-  // mainWindow.openDevTools();
+  mainWindow.openDevTools();
 
   mainWindow.on('closed', function() {
     mainWindow = null;
